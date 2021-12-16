@@ -8,38 +8,37 @@
 3	great grandson	great granddaughter */
 
 
-var x;
-var y;
 
-function generation(x, y) {
+
+  function generation(x, y) {
 	if (x==0 && y==0){
-    console.log("me")
-  }else if (x==1 && y=="m"){
-    console.log("son")
-  }else	if (x==1 && y=="f"){
-    console.log("daughter")
-  }else	if (x==2 && y=="m"){
-    console.log("grandson")
-  }else	if (x==2 && y=="f"){
-    console.log("granddaughter")
-  }else	if (x==3 && y=="m"){
-    console.log("great grandson")
-  }else	if (x==3 && y=="f"){
-    console.log("great granddaughter")
-  }else	if (x==-1 && y=="m"){
-    console.log("father")
-  }else if (x==-1 && y=="f"){
-    console.log("mother")
-  }else if (x==-2 && y=="m"){
-    console.log("grandfather")
-  }else if (x==-2 && y=="f"){
-    console.log("grandmother")
-  }else if (x==-3 && y=="m"){
-   console.log("great grandfather")
-  }else if (x==-3 && y=="f"){
-    console.log("great grandmother")
-  }else {
-    console.log("try again")
+    return "me"
+  } 	if (x==1 && y=="m"){
+    return "son"
+  }	if (x==1 && y=="f"){
+    return "daughter"
+  }	if (x==2 && y=="m"){
+    return "grandson"
+  }	if (x==2 && y=="f"){
+    return "granddaughter"
+  }	if (x==3 && y=="m"){
+    return "great grandson"
+  }	if (x==3 && y=="f"){
+    return "	great granddaughter"
+  }	if (x==-1 && y=="m"){
+    return "father"
+  }if (x==-1 && y=="f"){
+    return "mother"
+  }if (x==-2 && y=="m"){
+    return "grandfather"
+  }if (x==-2 && y=="f"){
+    return "grandmother"
+  }if (x==-3 && y=="m"){
+    return "great grandfather"
+  }if (x==-3 && y=="f"){
+    return "great grandmother"
+  } else {
+    console.log("bilgi yok")
   }
 }
-generation(-1,"m")
+console.log(generation(-2,"f"))
